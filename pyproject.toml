@@ -1,0 +1,23 @@
+[tool.poetry]
+name = "flaky-coverage-mre"
+version = "0.1.0"
+description = ""
+authors = ["Arthur Alves <arthurnalves.pro@gmail.com>"]
+readme = "README.md"
+
+[tool.poetry.dependencies]
+python = "^3.12"
+coverage = "^7.6.9"
+pytest = "^8.3.4"
+
+[tool.coverage.run]
+branch = true
+parallel = true
+sigterm = true
+concurrency = [
+    "multiprocessing",
+]
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
