@@ -8,6 +8,8 @@ def complex_math_verification():
 def test_foo():
     with multiprocessing.Pool(processes=1) as pool:
         pool.apply(complex_math_verification)
-        pool.close()
-        pool.terminate()
     pool.join()
+
+
+if __name__ == "__main__":
+    test_foo()

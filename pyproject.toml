@@ -8,10 +8,8 @@ readme = "README.md"
 [tool.poetry.dependencies]
 python = "^3.12"
 coverage = "^7.6.9"
-pytest = "^8.3.4"
 
 [tool.coverage.run]
-branch = true
 parallel = true
 sigterm = true
 concurrency = [
