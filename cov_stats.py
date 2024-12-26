@@ -16,10 +16,10 @@ def execute_script_n_times(script_path: str, N: int) -> float:
 
             output = result.stdout.strip()
             if output == "100":
-                print("✅")
+                print(output)
                 success_count += 1
             else:
-                print("❌")
+                print(output)
 
         except Exception as e:
             print(f"Run {i}: An unexpected error occurred: {e}")
